@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #ededed;
+    color: black;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+header,footer{
+background: black;
+color: yellow;
+}
+
+.site-header{
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.site-title{
+    text-align: center;
+    letter-spacing: .2em;
+    font-weight: 300;
+    font-size: 2em;
+    color: white;
+}
+.site-slogan{
+    text-align: center;
+    font-style: italic;
+}
+
+@media(min-width:1120px){
+
+    .site-title{
+        font-size: 4em;
+    }
+    .site-slogan{
+        font-size: 1.5em;
+    }
+}
+
+.site-info{
+    flex-grow: 1;
+display: flex;
+flex-flow: column;
+justify-content: center;
+}
+
+.main-menu{
+    background-color: yellow;
+    color: black;
+    padding: 1em 1em;
+}
+
+@media(min-width:810px){
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      } 
+      .post{
+         flex-basis: 49%;
+      }
+}
+@media(min-width:1120px){
+   .post-one-third{
+       flex-basis: 32%;
+   }
+   .half-post{
+       flex-basis: 49%;
+   }
+   .post-full{
+       flex-basis: 100%;
+   }
+}
+
+.main-content{
+padding: 2em;
+}
+
+ .post{
+     background: white;
+     margin-bottom: 1em;
+ }
+
+  .post a{
+      color: black;
+      text-decoration: none;
+  }
+
+.post-content{
+padding: 0 40px 20px;
+}
+
+.post h1{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 -40px 30px; 
+}
+
+
+.watch-today-header{
+    text-align: center;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+
+
+.watch-card{
+    margin-bottom: 1em;
+}
+
+.card-title{
+   
+    text-align: center;
+}
+
+.card-info{
+    background-color: black;
+    color: white;
+  
+}
+
+.about-movie{
+    padding: 1em;
+    text-align: center;
+}
+
+
+@media(min-width: 810px){
+
+    .watch-card{
+        display: flex;
+    }
+
+    .card-info{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .img-right{
+order: 2;
+    }
+}
+
+
+
+
+.download-header{
+    text-align: center;
+    background-color: yellow;
+    font-size: 2em;
+}
+
+.download-cast img{
+    height: 60px;
+    width: 60px;
+border-radius: 50%;
+}
+
+.download-cast,.download-genre{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin: 1em;
+}
+
+
+.download-info h4{
+   flex-basis: 20%;
+}
+
+@media(min-width: 810px){
+    .download-content{
+        display: flex;
+        flex-flow: row;
+    }
+
+.download-info{
+    flex-grow: 2;
+}
+
+.download-rating{
+    flex-grow: 1;
+}
+}
+
+
+
+
+.download-rating{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+.rating{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-menu li{
+    list-style: none;
+
+}
+
+.main-menu li a{
+    text-decoration: none;
+    padding: 1.3em;
+    color: black;
+}
+
+
+.main-menu li a:hover{
+    background: rgb(0, 0, 0);
+    color: yellow;
+}
+
+
+.gallery-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-imgs img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-img{
+    height: 250px;
+    flex: 1;
+    margin: 0 0 8px 8px;
+}
+
+.gallery-img:nth-child(4n+1){
+    flex-basis: 250px;
+}
+.gallery-img:nth-child(4n+2){
+    flex-basis: 325px;
+}
+.gallery-img:nth-child(4n+3){
+    flex-basis: 180px;
+}
+.gallery-img:nth-child(4n+4){
+    flex-basis: 380px;
+}
+
+.sidebar{
+    background: #ededed;
+    color: rgb(0, 0, 0);
+}
+
+.widget-content{
+    background-color: white;
+    text-align: center;
+}
+
+.widget-content ul{
+    list-style: none;
+    color: black;
+}
+
+.widget-content li a{
+    color: black;
+    text-decoration: none;
+}
+
+.widget{
+    margin-bottom: 2em;
+}
+
+@media(min-width:810px) and (max-width:1120px){
+    .sidebar{
+display: flex;
+margin-left: 2em;
+padding: 2em;
+flex-wrap: wrap;
+    }
+
+    .widget{
+        flex-basis: 49%;
+    }
+}
+
+.gallery-heading{
+    margin-top: .5em;
+    text-align: center;
+    font-size: 2em;
+    background: yellow;
+    color: black;
+}
+
+
+@media screen and (min-width: 1120px){
+
+    .content-area{  
+    display: flex;
+    }
+
+    .sidebar{
+        flex: 0 0 320px;
+        padding: 1em;
+    }
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
